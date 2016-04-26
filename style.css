@@ -1,0 +1,560 @@
+@charset "utf-8";
+		/* STEVEN's NOTES */
+		/*
+		/*FONTS USED: MOSTLY font-family:Arial, Helvetica, sans-serif; Verdana, Geneva, sans-serif; (SANS SERIF);*/
+			
+	@charset "UTF-8";
+	/* CSS Document */
+	<style media="screen" type="text/css">
+	
+		/********* CSS RESET *******/
+		   /********FOR IE*******/
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+				v2.0 | 20110126
+		License: none (public domain)*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+					margin: 0;
+					padding: 0;
+					border: 0;
+					font-size: 100%;
+					font: inherit;
+					vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+				display: block;
+				}
+				body {
+				line-height: 1;
+				}
+				ol, ul {
+				list-style: none;
+				}
+				blockquote, q {
+				quotes: none;
+				}
+				blockquote:before, blockquote:after,
+				q:before, q:after {
+				content: '';
+				content: none;
+				}
+				table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+				}
+	
+/**************************FONT STUFF**********************************************/
+
+	
+/*********FULL SIZED SCREENS AND DISPLAYS (MIN WIDTH 1280, MAX WIDTH 1920)*********/
+		html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: myFirstFont;
+	background-color:black;
+	background-image:url(images/bk.jpg);
+	background-attachment: fixed;
+    background-position: center;
+	background-repeat:no-repeat;
+	right: -30px;
+	
+		}
+		
+		#players{
+			
+		}
+
+		#wrapper {
+	min-height: 100%;
+	position: relative;
+	width: 960px;
+	background-color:black;
+	margin: 0 auto;
+	background-image:url(images/bk.jpg);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+		}
+	
+		#header {
+			padding: 0px;
+			background-image:url(images/header.jpg);
+			min-width:960px;
+			min-height:100px;
+		}
+		#header2 {
+			width:100%;
+			height:3px;
+			background-color:black;
+			background-image:url(images/bk.jpg);
+			background-attachment: fixed;
+    background-position: center;
+	background-repeat:no-repeat;
+		}
+
+		
+		
+		#userText{
+	font-family: myFirstFont;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	word-spacing: normal;
+	margin: 2px;
+	padding: 2px;
+	text-align: center;
+	top: 0px;
+	line-height: 5px;
+	vertical-align: top;
+	
+			
+		}
+		footer {
+			
+			
+		font-family: myFirstFont;
+	
+	color:white;
+	font-weight:bold;
+		background-image:url(images/headerbk.gif);
+		height:auto;
+			
+		}
+		footer p {
+			margin: 5px;
+			padding:5px;
+			font-family: myFirstFont;
+			font-size:14px;
+			text-align:right;
+			
+		}
+		footer a{
+			text-decoration:none;
+			color:black;
+		}
+		
+		/* Start of Column CSS */
+		#col2 {
+	clear: left;
+	float: left;
+	width: 960px;
+	min-width:800px;
+	url(images/playerBackground.gif);
+	overflow: visible;
+	
+	
+			  /* column 2 background color */
+		}
+		#col3 {
+	clear: left;
+	float: left;
+	width: 100%;
+	min-width:800px;
+	width: 960px;
+
+	transition: 1.5s;
+
+			  /* column 2 background color */
+		}
+
+		#col1 {
+	float: left;
+	width: 100%;
+	position: relative;
+	right: 0px;
+	width: 960px;
+	background-color: white;
+	background-image:url(images/mainbk.jpg);
+
+
+	
+		}
+	
+	#youtube{
+	width: 560px;
+	height: 300px;
+	float: right;
+	margin-top: 0px;
+	margin-right: 66px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+		
+	}
+		#nav {
+	float: left;
+	width: 150px;
+	height: auto;
+	position: left;
+	left: 613px;
+	overflow: hidden;
+	background-color: white;
+	margin-top: 0px;
+	margin-right: 12px;
+	margin-bottom: 0px;
+	margin-left: 40px;
+	padding-top: 0px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	border: thin solid #000;
+	line-height: normal;
+	
+		}
+		
+
+		main {
+	float: left;
+	width: 100%;
+	min-width:width: 960px;
+	padding: 10px;
+	overflow: hidden;
+	
+	url(images/mainbk.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top;	
+
+	
+	}
+	#main2{
+	background-color: white;
+	background-image:url(images/mainbk.jpg);
+	width:940px;
+	
+	
+	}
+	
+	#tableContain{
+	align: left;
+	float: left;
+	}
+	
+	#userInfo{
+	width: 200px;
+	height: 30px;
+	font-family: myFirstFont;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #FFF;
+	padding: 5px;
+	bottom: 100%;
+	position: relative;
+	border: 1px 1 #000;
+	clear: both;
+	float: right;
+	}
+
+		h1{
+		text-align:center;
+		}
+		
+	#tables{
+	font-family: myFirstFont;
+	size: 16px;
+	background-color: #FFF;
+	color: black;
+	position: right;
+	line-height: 30px;
+	height: 400px;
+	top: 400px;
+	bottom: auto;
+		
+	}
+	#tableSub{
+	font-family: myFirstFont;
+	font-size: 18px;
+	font-weight: lighter;
+	font-variant: normal;
+	font-style: italic;
+	text-indent: 15px;
+	
+	}
+	
+	#tableTitles{
+	font-family: myFirstFont;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #006;
+		
+	}
+		#tableHeader{
+	font-family: myFirstFont;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	background-image: url(images/headerbk.gif);
+	height: 25px;
+	font-size: 18px;
+	text-align: center;
+		}
+		
+		#tableHeader2{
+	font-family: myFirstFont;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	background-image: url(images/headerbk2.gif);
+	height: 25px;
+	font-size: 18px;
+	text-align: center;
+		}
+		
+		 #f7 {opacity: 0;}
+			#f6 {opacity: 0;}
+			#f5 {opacity: 0;}
+			#f4 {opacity: 0;}
+			#f3 {opacity: 0;}
+			#f2 {opacity: 0;}
+			
+		#commentTable{
+			background-image: url(images/cmntbk.gif);
+			background-repeat: repeat-x;
+font-size:12px;
+		width:100%; 
+		 
+	}
+
+
+<table class="TFtable">
+	<tr><td>Text</td><td>Text</td><td>Text</td></tr>
+	<tr><td>Text</td><td>Text</td><td>Text</td></tr>
+	<tr><td>Text</td><td>Text</td><td>Text</td></tr>
+	<tr><td>Text</td><td>Text</td><td>Text</td></tr>
+</table>
+
+
+		}
+		
+		.commentTable tr:nth-child(odd){ 
+		background: #b8d1f3;
+	}
+	/*  Define the background color for all the EVEN background rows  */
+	.commentTable tr:nth-child(even){
+		background: #dae5f4;
+	}
+		
+		
+		#tableHeader3{
+	font-family: myFirstFont;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	background-image: url(images/headerbk3.gif);
+	height: 25px;
+	font-size: 18px;
+	text-align: center;
+		}
+		#tableVar{
+		background-color:#C8DEF7;
+	}
+		
+		
+		a:link, a:visited, a:active{
+	font-family: myFirstFont;
+	text-decoration: none;
+	color:#F60;
+	font-weight:bold;
+			
+		}
+		
+		tableGrad{
+			background-image:url(images/tableGrad.png);
+			background-repeat: repeat-x;
+			background-attachment: fixed;
+    background-position: top;
+		}
+		#pageInfo{
+	width: 900px;
+	position: absolute;
+	background-color: white;
+	padding: 10px;
+	border: .5px solid #000;
+	height: 250px;
+	line-height: 25px;
+	right: 0px;
+	clear: left;
+	bottom: 50px;
+	margin-top: 0px;
+	margin-right: 30px;
+	margin-bottom: 0px;
+	margin-left: 30px;
+		}
+		
+		
+		
+		a:hover{
+	color:#006;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: myFirstFont;
+		
+			
+		}
+		
+		@font-face {
+    font-family: myFirstFont;
+    src:url(MyriadPro-Cond.otf);
+}
+	
+
+/*********SMART PHONE SIZED SCREENS !PORTRAIT! DISPLAYS (MIN WIDTH 960, MAX WIDTH 1279)*********/
+
+/*********SMART PHONE SIZED SCREENS !LANDSCAPE! DISPLAYS (MIN WIDTH 960, MAX WIDTH 1279)*********/
+
+
+
+/* CSS Document */
+
+#col2 {
+	width: 960px;
+	
+	visibility: visible;
+}
+#main2 {
+	
+	
+	overflow:visible;
+}
+
+#commentWrapper{
+	
+}
+
+#wrapper #col2 #col3 #main2 #pageInfo p {
+	font-family: myFirstFont;
+	min-width: 800px;
+	margin: 20px;
+	padding: 10px;
+	width: 900px;
+	bottom: 20px;
+	position: fixed;
+	height: 50px;
+	overflow: scroll;
+	clear: both;
+	float: right;
+	clip: rect(auto,auto,500px,auto);
+}
+#pageInfo {
+	top: 566px;
+	bottom: 60px;
+}
+#wrapper {
+	margin-top: 10px;
+}
+
+
+#col2 {
+	background-image: url(images/background2.gif);
+	background-repeat: repeat;
+	text-align: center;
+}
+#main2 {
+	background-image: url(images/background2.gif);
+	background-repeat: repeat;
+	float: left;
+	margin: 0px;
+	
+	display: block;
+}
+#navi{
+			width: 100%;
+			height:24px;
+			display: block;
+			width: 100%;
+			color:white;
+		}
+#userInfo {
+			width: 100%;
+			height:100px;
+			display: block;
+			width: 100%;
+			color:black;
+}
+
+#userInfo {
+	height: 110px;
+	width: 300px;
+	float: right;
+}
+.red {
+	color: #F00;
+	font-style: italic;
+}
+.center {
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+
+}
+.ital {
+	font-style: italic;
+}
+.ital {
+	text-align: center;
+	font-size: 14px;
+
+
+}
+.leftr {
+	text-align: left;
+}
+.lefte {
+	text-align: left;
+}
+#main2 {
+	padding-top: 0px;
+	text-align: center;
+}
+.b {
+	font-size: 24px;
+}
+.b {
+	font-size: xx-large;
+}
+.b {
+	color: #F00;
+	font-style: italic;
+}
+.lines {
+	border-bottom-width: 1px;
+	border-bottom-style: 1;
+	border-bottom-color: #000;
+	font-size: 16px;
+}
+.datinfo {
+	font-size: 10px;
+	font-style: italic;
+	float: left;
+	top: 0px;
+}
+.fantasy {
+	font-family: Georgia, Times New Roman, Times, serif;
+}
+.fantasy {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #0C0;
+	text-decoration: underline;
+}
+.fae {
+	font-family: Tahoma, Geneva, sans-serif;
+}
